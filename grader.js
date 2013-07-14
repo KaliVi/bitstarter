@@ -76,7 +76,6 @@ if(require.main == module) {
 	.parse(process.argv);
     
     if(typeof(program.url) !== 'undefined') {
-       console.log("using URL");
        rest.get(program.url).on('complete', function (data) {
            $ = cheerio.load(data);
            var checks = loadChecks(program.checks).sort();
