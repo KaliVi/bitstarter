@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Better Healthcare Now !</title>
+    <title>Find What Healthcare Will Cost You</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"
           href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
@@ -31,8 +31,8 @@
       
       /* Landscape phones and down */
       @media (max-width: 480px) {
-        body {
-          padding-top: 2.5% 10%;
+        copy {
+          padding: 2.5% 10%;
         }
         .linediv-l {
           border-right: 1px white solid;
@@ -47,10 +47,10 @@
       
       /* Main body and headings */
       body {
-        font-family: "Open Sans", Helvetica, Arial, sans-serif;
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
       }
       .heading, .subheading {
-        font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
         text-align: center;
       }
       p.lead {
@@ -115,7 +115,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="#">HealthChoice</a>
+          <a class="brand" href="#">CareCostFinder</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>
@@ -136,82 +136,89 @@
       <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
       <div class="row-fluid heading">
         <div class="span12">
-          <h1>Healthcare Choice</h1>
+          <h1>What Healthcare Should Cost</h1>
         </div>
       </div>
       <div class="row-fluid subheading">
         <div class="span12">
           <!-- Special typography from Bootstrap for lead paragraph. -->
           <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-          <p class="lead">The place to help you choose a local healthcare provider based on out-of-pocket cost of healthcare.</p> 
+          <p class="lead">Choose healthcare providers based on what others have paid. Share your healthcare costs to help others.</p> 
         </div>
       </div>
       <div class="row-fluid pitch">
         <div class="span5 offset1 video">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
+          <img class="img-polaroid" alt="Placeholder" src="http://placehold.it/480x300">
         </div>
         
         <!-- We define a new 'actions' div to contains statistics, order, and share buttons. -->
         <div class="span5 actions">
-          <div class="span8 offset2">
-            <div class="statistics">
-              <!-- linediv-l and linediv-r give dividing lines that look 
-              different in horizontal and vertical layouts, illustrating
-              media queries. -->
-              <div class="span4">
-                <div class="linediv-l">
-                  <h3>0</h3>
-                  <p>backers</p>
+          <div class="row-fluid">
+            <div class="span8 offset2">
+              <div class="row-fluid statistics">
+                <!-- linediv-l and linediv-r give dividing lines that look 
+                different in horizontal and vertical layouts, illustrating
+                media queries. -->
+                <div class="span4">
+                  <div class="linediv-l">
+                    <h3>0</h3>
+                    <p>backers</p>
+                  </div>
                 </div>
-              </div>
-              <div class="span4">
-                <div class="linediv-c">
-                  <h3>0</h3>
-                  <p>of $50,000</p>
+                <div class="span4">
+                  <div class="linediv-c">
+                    <h3>0</h3>
+                    <p>of $50,000</p>
+                  </div>
                 </div>
-              </div>
-              <div class="span4">
-                <div class="linediv-r">
-                  <h3>40</h3>
-                  <p>days left</p>
+                <div class="span4">
+                  <div class="linediv-r">
+                    <h3>40</h3>
+                    <p>days left</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="span10 offset1">
-            <!-- Bootstrap progress bar -->
-            <!-- http://twitter.github.io/bootstrap/components.html#progress -->
-            <div class="thermometer progress active">
-              <div class="bar bar-success" style="width: 0%;"></div>
-              <div class="bar bar-warning" style="width: 100%;"></div>
-            </div>
-            <div class="span12 order">
-              <!-- Standard Bootstrap button. -->
-              <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
-              <div class="span6">
-                <button class="btn btn-success btn-large">Donate to the Cause</button>
-              </div>
-              <div class="span6">
-                <button class="btn btn-success btn-large">Request / Vote on Features</button>
+            <div class="row-fluid">
+              <div class="span10 offset1">
+                <!-- Bootstrap progress bar -->
+                <!-- http://twitter.github.io/bootstrap/components.html#progress -->
+                <div class="thermometer progress active">
+                  <div class="bar bar-success" style="width: 0%;"></div>
+                  <div class="bar bar-warning" style="width: 100%;"></div>
+                </div>
               </div>
             </div>
-            <div class="span8 offset2 social">
-              <!-- Social buttons are not included in default Bootstrap. -->
-              <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
-              <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
-              <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
+            <div class="row-fluid">
+              <div class="span12">
+                  <div class="span2 offset1 order">
+                    <!-- Standard Bootstrap button. -->
+                    <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
+                    <button class="btn btn-success btn-large">Contribute</button>
+                  </div>
+                <div class="span8 offset1 order">
+                  <button class="btn btn-success btn-large">Request / Vote on Features</button>
+                </div>
+              </div>
+            </div>
+            <div class="row-fluid">
+              <div class="span8 offset2 social">
+                <!-- Social buttons are not included in default Bootstrap. -->
+                <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
+                <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
+                <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      
       <!-- Beyond this part the marketing copy begins. -->
       <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-allign -->
       <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
       <!-- http://placehold.it -->
       <div class="row-fluid section1">
         <div class="span5 offset1 asset">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
+          <img class="img-polaroid" alt="Placeholder" src="http://placehold.it/480x300">
         </div>
         <div class="span5 copy">
           <p>
@@ -232,7 +239,7 @@
           </p>
         </div>
         <div class="span5 asset">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
+          <img class="img-polaroid" alt="Placeholder" src="http://placehold.it/480x300">
         </div>
       </div>
       
